@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet-theme-android.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">欢迎参加Ipv6video测试</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <p class="content-padded">请观看下方视频，评价其流畅度、清晰度、质量等，非常感谢！</p>
+      <div class="card">
+        <video class="media-object pull-left" controls>
+            <source src="https://nr.ahtvu.ah.cn/upload/16/work/1510-20190923160432-24737.mp4" type="video/mp4">
+        </video>
+        <form class="input-group table-view"></form>        
+          <li class="table-view-cell">           
+                <div class="segmented-control push-right">
+                <button class="btn btn-outlined control-item">很卡</button>
+                <button class="btn btn-outlined control-item">卡</button>
+                <button class="btn btn-outlined control-item active">一般</button>
+                <button class="btn btn-outlined control-item">流畅</button>
+                <button class="btn btn-outlined control-item">很流畅</button>    
+                </div>                           
+          </li>
+          <li class="table-view-cell">           
+                <div class="segmented-control">
+                <button class="btn btn-outlined control-item">很模糊</button>
+                <button class="btn btn-outlined control-item">模糊</button>
+                <button class="btn btn-outlined control-item active">一般</button>
+                <button class="btn btn-outlined control-item">清晰</button>
+                <button class="btn btn-outlined control-item">很清晰</button>    
+                </div>      
+          </li>
+          <li class="table-view-cell">           
+                <div class="segmented-control">
+                <button class="btn btn-outlined control-item">很讨厌</button> 
+                <button class="btn btn-outlined control-item">讨厌</button>
+                <button class="btn btn-outlined control-item active">一般</button> 
+                <button class="btn btn-outlined control-item">喜欢</button>
+                <button class="btn btn-outlined control-item">很喜欢</button>             
+                </div>           
+          </li>
+         
+          <li class="table-view-cell">
+            <input type="text" placeholder="联系方式">            
+          </li>
+          <li class="table-view-cell">         
+            <textarea rows="5" placeholder="您的建议"></textarea>
+          </li>    
+          <li class="table-view-cell">    
+            <button class="btn btn-positive btn-block navigate-center">确认提交</button>
+          </li>     
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
